@@ -77,9 +77,9 @@ def select_shops(shops):
             print("Такого магазина нет")
 
 
-def save_shops(file_name, staff):
+def save_shops(file_name, shops):
     with open(file_name, "w", encoding="utf-8") as fout:
-        json.dump(staff, fout, ensure_ascii=False, indent=4)
+        json.dump(shops, fout, ensure_ascii=False, indent=4)
 
 
 def load_shops(file_name):
